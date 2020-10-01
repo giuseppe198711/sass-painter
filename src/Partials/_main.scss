@@ -1,8 +1,82 @@
 .central-foto {
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  position: relative;
+  background-image: url("../immagini/hero.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 50% 40%;
   background-size: cover;
-  padding-top: 20px;
+  height: 450px;
   color: #fff;
+}
+
+.painter {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30%;
+  h3, h4, h5 {
+    padding-bottom: 20px;
+  }
+
+
+}
+
+.money-back {
+  bottom: 0;
+  right: 150px;
+  position: absolute;
+  width: 400px;
+  height: 440px;
+  background-color: #030809;
+}
+.nav-bottom {
+  width: 100%;
+  height: $altezzaNavBottom;
+  background-color: #E6E6E6;
+  .nav-bottom-list {
+    color: #5F5D59;
+    margin-left: 200px;
+
+
+  }
+}
+
+.main-foto-one {
+  background-image: url("../immagini/intro.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: cover;
+  height: 900px;
+  color: #fff;
+}
+
+.main-foto-frame {
+  background-image: url("../immagini/intro-screen.png");
+  height: 400px;
+  background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// per inserire la query tablet in una variabile
+@#{$tablet} {
+  .central-foto {
+    display: none;
+  }
 }
